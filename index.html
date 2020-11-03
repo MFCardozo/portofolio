@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>|Manu|</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- own fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Resume</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction-->
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Manu</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <img src="img/Manu-cardozo.png" alt="a picture" class="intro__img" />
+    </section>
+
+    <!--My services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+
+      <div class="services">
+        <div class="service">
+          <h3>Development</h3>
+          <p>
+            Focus on every part of the web developmment,either back-end or
+            front-end,always taking care of minimum details and functionalities
+            that must have a app web modern,most notables
+            SEO,performance,user-friendly,responsive,Server-Side-Rendering and
+            more...
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">My work</a>
+    </section>
+    <!--My work -->
+
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle--work">A selection of my range of work</p>
+      <div class="carousel__track--container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <a href="https://github.com/ManuMcfly6/adopt-pet-py"
+              ><img
+                src="img/img-adopta-readme.png"
+                alt=""
+                class="img__individual"
+            /></a>
+          </li>
+          <li class="carousel__slide">
+            <a href="https://phone-ecommerce-pern.herokuapp.com/"
+              ><img
+                src="img/landing-project.png"
+                alt=""
+                class="img__individual"
+            /></a>
+          </li>
+          <!-- <li class="carousel__slide">
+            <a href="#"
+              ><img src="img/news2.jpg" alt="" class="img__individual"
+            /></a>
+          </li> -->
+        </ul>
+      </div>
+
+      <!--buttons carousel-->
+      <div class="carousel__button-container">
+        <div class="carousel__button carousel__button--left">
+          <i class="fas fa-angle-left"></i>
+        </div>
+        <div class="carousel__button carousel__button--right">
+          <i class="fas fa-angle-right"> </i>
+          <svg class="animation__container">
+            <circle cx="46%" cy="46%" r="44%"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME-->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">full-stack dev</p>
+
+      <div class="about-me__body">
+        <p>
+          I love computer science, especially programming languages, always
+          wanting to learn, self-taught with dreams and goals to fulfill.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <a href="mailto:manu.mcfly6@gmail.com" class="footer__link"
+        >manu.mcfly6@gmail.com</a
+      >
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/ManuMcfly6"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/manuel-cardozo-3321231bb"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
