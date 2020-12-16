@@ -98,7 +98,7 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
-  border-radius: 8%;
+  border-radius: 0.4vw;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -144,7 +144,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: rgba(0, 0, 0, 0.06);
-  border-radius: 8%;
+  border-radius: 1vw;
   padding: 0.25em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -312,6 +312,7 @@ header {
 .section__subtitle--intro {
   display: inline-block;
   align-self: flex-end;
+  text-align: end;
   width: 90vw;
 }
 
@@ -482,7 +483,7 @@ header {
 .carousel__button {
   position: relative;
   margin: 0 0.2em;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(225, 225, 225, 0.8);
   cursor: pointer;
   border-radius: 50%;
   height: 6.1vmin;
@@ -560,15 +561,19 @@ svg circle {
     var(--clr-dark) 100%
   );
 
-  background-size: 140% 60%;
+  background-size: 147% 53%;
 }
 .section__title--about {
   margin-top: 0.25em;
+  font-size: 1.8em;
+}
+.section__subtitle--about {
+  text-align: end;
 }
 
 .about-me__body {
   background: var(--clr-light);
-  border-radius: 5%;
+  border-radius: 1vw;
 }
 
 @media (min-width: 600px) {
