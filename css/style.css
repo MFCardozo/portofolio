@@ -144,7 +144,7 @@ h3 {
 }
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(242, 242, 242, 0.9);
   border-radius: 1vw;
   padding: 0.25em;
   margin-bottom: 1em;
@@ -568,7 +568,7 @@ svg circle {
   font-size: 1.8em;
 }
 .section__subtitle--about {
-  text-align: end;
+  text-align: center;
 }
 
 .about-me__body {
@@ -596,7 +596,7 @@ svg circle {
     left: -1em;
     width: calc(100% + 2em);
     padding-left: 1em;
-    padding-right: calc(200px + 4em);
+    /* padding-right: calc(200px + 4em); */
   }
 }
 
