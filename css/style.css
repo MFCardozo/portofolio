@@ -55,6 +55,7 @@ body {
 }
 section {
   padding: 5em 2em;
+  z-index: 10;
 }
 
 img {
@@ -333,8 +334,8 @@ header {
     background: linear-gradient(
       to right top,
       rgb(247, 247, 247) 0%,
-      rgb(247, 247, 247) 68.5%,
-      var(--clr-dark) 68.6%
+      rgb(247, 247, 247) 70.5%,
+      var(--clr-dark) 70.55%
     );
   }
 
@@ -440,6 +441,7 @@ header {
 @media (min-width: 800px) {
   .my-services {
     display: flex;
+    padding: 5em 4em;
   }
   .services {
     display: grid;
@@ -459,8 +461,8 @@ header {
     margin: 0 -3em;
   }
   .service__img {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
   }
   .vertical__line--services {
     left: 15vmax;
@@ -721,13 +723,31 @@ svg circle {
 /* footer*/
 
 .footer {
-  background: #111111;
-  color: var(--clr-light);
+  position: fixed;
+  background: rgb(247, 247, 247);
+  background: linear-gradient(
+    to left top,
+    rgb(247, 247, 247) 0%,
+    rgb(247, 247, 247) 70.5%,
+    var(--clr-dark) 70.55%
+  );
+  color: var(--clr-dark);
   text-align: center;
   padding: em 0 1em 0;
-  font-size: var(--fs-h3);
+  font-size: 2.5rem;
+  z-index: 1;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
+.footer--hide {
+  display: none;
+}
 .footer a {
   color: inherit;
   text-decoration: none;
@@ -736,6 +756,14 @@ svg circle {
 .footer__link {
   display: inline-block;
   font-weight: var(--fw-bold);
+}
+.logo__footer {
+  width: 30vmax;
+  opacity: 0;
+  transition: opacity cubic-bezier(0, 0.52, 0.03, -0.18) 0.7s,
+    transform cubic-bezier(0, 0.52, 0.03, -0.18) 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .social-list {
@@ -759,7 +787,7 @@ svg circle {
   height: 3px;
   display: block;
   margin-top: -0.2em;
-  background-color: var(--clr-light);
+  background-color: var(--clr-dark);
 }
 .footer__link:hover::after,
 .social-list__item:hover::after {
@@ -770,4 +798,7 @@ svg circle {
 .footer__link:hover,
 .social-list__link:hover {
   opacity: 0.7;
+}
+.fade-transition {
+  padding-bottom: 100vh;
 }

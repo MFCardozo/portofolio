@@ -60,3 +60,25 @@ prevBtn.addEventListener("click", (e) => {
   moveSlice(tracker, currentSlide, prevSlide);
 });
 setInterval(() => nextBtn.click(), 5000);
+
+/*hide footer fixed in home*/
+const footerElement = document.getElementById("footer");
+const logoFooter = document.getElementById("logo__footer");
+const myScrollFunc = () => {
+  var y = window.scrollY;
+  if (y >= 1000) {
+    footerElement.className = "footer";
+  } else {
+    footerElement.className = "footer--hide";
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+/*lazy loading logo footer*/
+window.onscroll = () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+    logoFooter.style.opacity = "1";
+    logoFooter.style.transform = "scaleX(1)";
+  }
+};
