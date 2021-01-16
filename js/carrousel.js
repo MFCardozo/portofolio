@@ -5,11 +5,14 @@ const nextBtn = document.querySelector(".carousel__button--right");
 const prevBtn = document.querySelector(".carousel__button--left");
 //obtain the width of images
 const slideWidth = carouselSlides[0].getBoundingClientRect().width;
+
 //assign a width proporcional each image for the carousel
 const setSlidePosition = (slide, index) => {
   slide.style.left = `${slideWidth * index}px`;
 };
+
 carouselSlides.forEach(setSlidePosition);
+
 //when I click right,move slides to the right or left
 const moveSlice = (track, current, target) => {
   track.style.transform = `translateX(-${target.style.left})`;
@@ -21,6 +24,7 @@ const moveSlice = (track, current, target) => {
   current.classList.remove("current-slide");
   target.classList.add("current-slide");
 };
+
 nextBtn.addEventListener("click", (e) => {
   const currentSlide = tracker.querySelector(".current-slide");
   let nextSlide = currentSlide.nextElementSibling;
@@ -29,6 +33,7 @@ nextBtn.addEventListener("click", (e) => {
   }
   moveSlice(tracker, currentSlide, nextSlide);
 });
+
 prevBtn.addEventListener("click", (e) => {
   const currentSlide = tracker.querySelector(".current-slide");
 
@@ -38,4 +43,5 @@ prevBtn.addEventListener("click", (e) => {
   }
   moveSlice(tracker, currentSlide, prevSlide);
 });
+
 setInterval(() => nextBtn.click(), 5000);

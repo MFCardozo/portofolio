@@ -19,6 +19,3 @@ window.onscroll = () => {
     logoFooter.style.transform = "translateX(0)";
   }
 };
-
-
-
