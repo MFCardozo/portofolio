@@ -535,7 +535,7 @@ header {
   position: relative;
   color: var(--clr-light);
   text-align: center;
-  padding: 1em 2em;
+  padding: 1em;
 }
 .section__title--about {
   color: var(--clr-light);
